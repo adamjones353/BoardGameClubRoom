@@ -1,0 +1,10 @@
+﻿.LightMode {
+    background-color: #fff;
+    color: #000000;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.DarkMode {
+    background-color: #424242;
+    color: #fff;
+}
