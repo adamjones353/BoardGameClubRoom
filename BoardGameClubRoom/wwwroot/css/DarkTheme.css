@@ -1,0 +1,52 @@
+﻿
+body {
+    background-color: #424242 !important;
+    color: #fff !important;
+}
+
+.navbar {
+    background-color: #424242 !important;
+    color: #fff !important;
+}
+
+.text-dark {
+    color: #fff !important;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff !important;
+}
+
+.chatWindow {
+    background-color: #323232;
+}
+
+.chatFrom {
+    background-color: #424242
+}
+
+.chatInput {
+    border-bottom-color: #bbbbbb;
+    background-color: #cdcdcd;
+}
+
+.slider {
+    background-color: #272626;
+}
+
+.sliderChatForm {
+    background-color: #272626;
+}
+
+.chaticon {
+    background-color: #3f3f3f;
+    border-color: #3f3f3f;
+}
+
+.border-top {
+    border-top-color: #272626 !important;
+}
+
+.border-bottom {
+    border-bottom-color: #272626 !important;
+}

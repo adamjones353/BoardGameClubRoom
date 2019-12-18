@@ -1,7 +1,12 @@
-﻿<header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+﻿@model HeaderViewModel
+
+
+
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
         <div class="container">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BoardGameClubRoom</a>
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TestSite</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -9,13 +14,23 @@
             <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Chat</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Account</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="nav navbar-nav d-sm-inline-flex flex-sm-row-reverse navbar-right">
+                    <li class="nav-item">
+                        <a id="signOutLink" data-toggle="modal" data-target="#modal" href="#" target="_top">
+                            <i class="fas fa-sign-out-alt"></i>Log out
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+

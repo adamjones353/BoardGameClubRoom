@@ -1,0 +1,32 @@
+﻿.chatWindow {
+    background-color: #DDDDDD;
+}
+
+.chatFrom {
+    background-color: #fff
+}
+
+.chatInput {
+    border-bottom-color: #bbbbbb
+}
+
+.slider {
+    background-color: #eeeeee;
+}
+
+.sliderChatForm {
+    background-color: #ccc;
+}
+
+.chaticon {
+    background-color: #bbb;
+    border-color: #bbbbbb;
+}
+
+.border-top {
+    border-top-color: #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom-color: #e5e5e5;
+}

@@ -28,3 +28,5 @@ C:\Dev\TigerTeam-KitKatWork\BoardGameClubRoom\BoardGameClubRoom\obj\Debug\netcor
 C:\Dev\TigerTeam-KitKatWork\BoardGameClubRoom\BoardGameClubRoom\obj\Debug\netcoreapp2.2\BoardGameClubRoom.dll
 C:\Dev\TigerTeam-KitKatWork\BoardGameClubRoom\BoardGameClubRoom\obj\Debug\netcoreapp2.2\BoardGameClubRoom.pdb
 C:\Dev\TigerTeam-KitKatWork\BoardGameClubRoom\BoardGameClubRoom\obj\Debug\netcoreapp2.2\BoardGameClubRoom.csproj.CopyComplete
+C:\Dev\TigerTeam-KitKatWork\BoardGameClubRoom\BoardGameClubRoom\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Header.g.cshtml.cs
+C:\Dev\TigerTeam-KitKatWork\BoardGameClubRoom\BoardGameClubRoom\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Footer.g.cshtml.cs

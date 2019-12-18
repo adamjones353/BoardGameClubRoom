@@ -1,4 +1,68 @@
 ﻿
+
+/*Chat Window*/
+.chatWindow {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.chatContainer {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.chatLog {
+    flex-grow: 1;
+}
+
+.chatFrom {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.chatInput {
+    flex-grow: 1;
+    width: 100%;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.slider {
+    width: 10px;
+    position: absolute;
+    top: 57px;
+    bottom: 60px;
+    left: 50%;
+    cursor: ew-resize;
+}
+
+.sliderChatForm {
+    height: 10px;
+    position: absolute;
+    bottom: 122px;
+    left: 0;
+    width: 50%;
+    cursor: ns-resize;
+}
+
+.chaticon {
+    border: 7px solid ;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Details Window*/
+.detailsWindow {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -10,17 +74,37 @@ a.navbar-brand {
 html {
   font-size: 14px;
 }
+
+.main-container {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.header-container {
+    height: auto;
+}
+
+.body-container {
+    flex-grow : 1;
+}
+
+.footer-container {
+    height: 62px;
+}
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+  border-top: #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: #e5e5e5;
 }
 
 .box-shadow {
@@ -39,13 +123,8 @@ html {
   min-height: 100%;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
 .footer {
-  position: absolute;
-  bottom: 0;
+
   width: 100%;
   white-space: nowrap;
   /* Set the fixed height of the footer here */

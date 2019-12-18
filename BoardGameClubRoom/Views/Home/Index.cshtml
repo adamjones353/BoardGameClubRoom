@@ -1,8 +1,24 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Chat";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="chatWindow box-shadow">
+    
+    <div class="chatContainer">
+        <div class="chatLog">
+
+        </div>
+    
+        <form class="chatFrom">
+            <div class="sliderChatForm"></div>
+            <textarea class="chatInput"></textarea>
+            <i class="fas fa-paper-plane chaticon"> Send</i>
+        </form>
+    </div>
+    
+    <div class="slider"></div>
+</div>
+
+<div class="detailsWindow">
+
 </div>

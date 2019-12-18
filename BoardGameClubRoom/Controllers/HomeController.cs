@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace BoardGameClubRoom.Controllers
     {
         public IActionResult Index()
         {
+            SQLiteConnection.CreateFile("Games.sqlite");
             return View();
         }
 
