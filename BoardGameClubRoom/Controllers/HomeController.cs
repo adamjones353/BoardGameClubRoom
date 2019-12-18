@@ -13,7 +13,6 @@ namespace BoardGameClubRoom.Controllers
     {
         public IActionResult Index()
         {
-            SQLiteConnection.CreateFile("Games.sqlite");
             return View();
         }
 

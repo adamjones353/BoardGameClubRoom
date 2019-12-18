@@ -11,29 +11,29 @@ namespace BoardGameClubRoom.Controllers
 {
     public class ChatController : Controller
     {
-        [HttpPost]
-        public void SendMessage(ChatMessage message)
+        //[HttpPost]
+        public string SendMessage(ChatMessage message)
         {
-            SQLiteConnection.CreateFile("Games.sqlite");
-        }
-
-
-        private void StoreMessage(ChatMessage message)
-        {
-            string cs = "Data Source=:memory:";
-            string stm = "SELECT SQLITE_VERSION()";
-
-            using (var con = new SQLiteConnection(cs))
+            using (var connection = new SQLiteConnection("Data Source=Games.sqlite"))
             {
-                con.Open();
-                using (var cmd = new SQLiteCommand(stm, con))
+                connection.Open();
+                using (SQLiteCommand command = connection.CreateCommand())
                 {
-                    string version = cmd.ExecuteScalar().ToString();
+                    SQLiteCommand sqlComm = new SQLiteCommand(@"SELECT * FROM Messages");
+                    SQLiteDataReader r = sqlComm.ExecuteReader();
+                    while (r.Read())
+                    {
+                        string FileNames = (string)r["FileName"];
 
-                    Console.WriteLine($"SQLite version: {version}");
+                        List<string> ImportedFiles = new List<string>();
+
+                    }
+
+                    connection.Close();
                 }
-
+                
             }
+            return "";
         }
     }
 }
