@@ -9,9 +9,9 @@
 
         </div>
     
-        <form class="chatFrom">
+        <form class="chatFrom" action="@Url.Action("SendMessage", "Chat")" method="post" data-ajax="true" data-ajax-method="post">
             <div class="sliderChatForm"></div>
-            <textarea class="chatInput"></textarea>
+            <textarea class="chatInput" name="Message"></textarea>
             <i class="fas fa-paper-plane chaticon"> Send</i>
         </form>
     </div>
