@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - BoardGameClubRoom</title>
 
-    <link rel="stylesheet" href="~/css/site.min.css" />
-    <link rel="stylesheet" href="~/css/theme.min.css" />
+    <link rel="stylesheet" href="~/bundled/css/lib.min.css" />
+    <link rel="stylesheet" href="~/bundled/css/site.css" />
+    <link rel="stylesheet" href="~/css/Themes/LightTheme.css" title="light" />
+    <link rel="alternate stylesheet" href="~/css/Themes/DarkTheme.css" title="dark" />
 </head>
 <body class="LightMode">
 
@@ -23,10 +25,7 @@
     </div>
 
 </div>
-
-
-
-
+    
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -46,7 +45,8 @@
     </div>
 </div>
 
-<script src="~/js/site.min.js" asp-append-version="true"></script>
+<script src="~/bundled/js/lib.min.js" asp-append-version="true"></script>
+<script src="~/bundled/js/site.js" asp-append-version="true"></script>
 
 @RenderSection("Scripts", required: false)
 </body>

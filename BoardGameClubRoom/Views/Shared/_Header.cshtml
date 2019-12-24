@@ -1,8 +1,4 @@
 ﻿@model HeaderViewModel
-
-
-
-
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
         <div class="container">
@@ -23,11 +19,27 @@
             </div>
             <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                 <ul class="nav navbar-nav d-sm-inline-flex flex-sm-row-reverse navbar-right">
-                    <li class="nav-item">
-                        <a id="signOutLink" data-toggle="modal" data-target="#modal" href="#" target="_top">
-                            <i class="fas fa-sign-out-alt"></i>Log out
-                        </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal">Account settings</a>
+                            
+                            <div class="form-group">
+                                <label for="themes">Theme</label>
+                                <select class="form-control" id="themes">
+                                    <option value="light">Light</option>
+                                    <option value="dark">Dark</option>
+                                </select>
+                            </div>
+                            
+                            
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" id="signOutLink" data-toggle="modal" data-target="#modal" href="#" target="_top">
+                                <i class="fas fa-sign-out-alt"></i>Log out
+                            </a>
+                        </div>
                     </li>
+
                 </ul>
             </div>
         </div>

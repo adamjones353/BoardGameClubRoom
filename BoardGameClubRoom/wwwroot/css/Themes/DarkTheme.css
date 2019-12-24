@@ -1,5 +1,4 @@
-﻿
-body {
+﻿body {
     background-color: #424242 !important;
     color: #fff !important;
 }
@@ -17,12 +16,43 @@ body {
     color: #fff !important;
 }
 
+.nav-link {
+    color: #fff !important;
+}
+
+.form-control {
+    color: #fff !important;
+    background-color: #424242 !important;
+    border: 1px solid #323232 !important;
+}
+
+.form-control:focus {
+    color: #fff !important;
+    background-color: #424242 !important;
+    border-color: #323232 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important;
+}
+
 .chatWindow {
     background-color: #323232;
 }
 
 .chatFrom {
     background-color: #424242
+}
+
+.dropdown-menu {
+    background-color: #323232 !important;
+    color: #fff !important;
+}
+
+.dropdown-item {
+    color: #fff !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #fff !important;
+    background-color: #424242 !important;
 }
 
 .chatInput {

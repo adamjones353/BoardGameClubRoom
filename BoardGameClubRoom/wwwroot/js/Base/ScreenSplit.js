@@ -10,12 +10,12 @@
         this.drag = "";
 
       
-        if (window.getCookie("horizontal") === "0") {
-            window.setCookie("horizontal", $(window).width()/2, 365);
+        if (window.app.CookieControl.getCookie("horizontal") === "0") {
+            window.app.CookieControl.setCookie("horizontal", $(window).width()/2, 365);
         }
 
-        if (window.getCookie("vertical") === "0") {
-            window.setCookie("vertical", "200", 365);
+        if (window.app.CookieControl.getCookie("vertical") === "0") {
+            window.app.CookieControl.setCookie("vertical", "200", 365);
         }
 
         this.UpdateSize();
@@ -74,8 +74,8 @@
 
         if (this.drag === "") return;
 
-        var width = window.getCookie("horizontal");
-        var height = window.getCookie("vertical");
+        var width = window.app.CookieControl.getCookie("horizontal");
+        var height = window.app.CookieControl.getCookie("vertical");
 
         if (this.drag === "horizontal") {
             width = (event.clientX).clamp($(window).width() * 0.2, $(window).width() * 0.8);
@@ -88,8 +88,8 @@
             height = (heightOffset - event.clientY).clamp($(window).height() * 0.1, $(window).height() * 0.6);
         }
 
-        window.setCookie("horizontal", width, 365);
-        window.setCookie("vertical", height, 365);
+        window.app.CookieControl.setCookie("horizontal", width, 365);
+        window.app.CookieControl.setCookie("vertical", height, 365);
 
         this.UpdateSize();
         
@@ -97,8 +97,8 @@
 
     UpdateSize = () => {
 
-        var width = parseInt(window.getCookie("horizontal"));
-        var height = parseInt(window.getCookie("vertical"));
+        var width = parseInt(window.app.CookieControl.getCookie("horizontal"));
+        var height = parseInt(window.app.CookieControl.getCookie("vertical"));
         
 
         this.slider.css({
